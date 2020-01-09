@@ -44,6 +44,7 @@
 		847CC12B23C6502B00A4A14E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CC12A23C6502B00A4A14E /* Common.swift */; };
 		847CC12E23C7D0D300A4A14E /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CC12D23C7D0D300A4A14E /* Notifier.swift */; };
 		847CC13123C7D3FF00A4A14E /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CC13023C7D3FF00A4A14E /* Constraints.swift */; };
+		847CC13323C7E8BF00A4A14E /* View+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CC13223C7E8BF00A4A14E /* View+Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		847CC12A23C6502B00A4A14E /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		847CC12D23C7D0D300A4A14E /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
 		847CC13023C7D3FF00A4A14E /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		847CC13223C7E8BF00A4A14E /* View+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Common.swift"; sourceTree = "<group>"; };
 		BD4EFF776D8518127E26B144 /* Pods-StackOverflowApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowApp.release.xcconfig"; path = "Target Support Files/Pods-StackOverflowApp/Pods-StackOverflowApp.release.xcconfig"; sourceTree = "<group>"; };
 		F461F63F7C866D8FE08EA72D /* libPods-StackOverflowApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackOverflowApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,6 +195,7 @@
 				847B77D823C34A96007C88CC /* String+Common.swift */,
 				847B77EB23C5315E007C88CC /* TableView+Common.swift */,
 				847CC12823C6408100A4A14E /* Data+Common.swift */,
+				847CC13223C7E8BF00A4A14E /* View+Common.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				847CC12923C6408100A4A14E /* Data+Common.swift in Sources */,
 				847B77F523C54B03007C88CC /* NetworkEngine.swift in Sources */,
 				847B77C123C335F2007C88CC /* UserViewController.swift in Sources */,
+				847CC13323C7E8BF00A4A14E /* View+Common.swift in Sources */,
 				847B77D723C348FB007C88CC /* IconFont.swift in Sources */,
 				847B77D923C34A96007C88CC /* String+Common.swift in Sources */,
 				847B77A823C22BE8007C88CC /* AppDelegate.swift in Sources */,

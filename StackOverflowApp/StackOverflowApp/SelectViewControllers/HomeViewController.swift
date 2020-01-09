@@ -22,6 +22,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     private var selectedSort: (String, String) = ("","")
     private var page = 1
     private var scrollToTop = false
+    private let refreshControl = UIRefreshControl()
     
     var answerDelegate: ViewAnswerDelegate!
     
@@ -40,6 +41,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         view.backgroundColor = Colors.BackgroundColor
         selectedSort = sortByValues.first!
+        addRefreshControl()
         addRightBarButton(title: "SortBy".localized, icon: .DropDownIcon, target: self, selector: #selector(showSortByValues))
         tableView.registerTableCell(for: QuestionCellIdentifier)
         tableView.setDefaultsForTableView(
@@ -118,5 +120,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.detailTextLabel?.text = "CheckInternetInfo".localized
         cell.selectionStyle = .none
         return cell
+    }
+    
+    func addRefreshControl() {
+        refreshControl.tintColor = Colors.AppTheme
+        refreshControl.attributedTitle = NSAttributedString(string: "Fetching recent questions")
+        refreshControl.addTarget(self, action: #selector(refreshTableView), for: UIControl.Event.valueChanged)
+        tableView.refreshControl = refreshControl
+    }
+    
+    @objc func refreshTableView() {
+        dataArray = []
+        page = 1
+        scrollToTop = true
+        fetchQuestions()
+        refreshControl.endRefreshing()
     }
 }
