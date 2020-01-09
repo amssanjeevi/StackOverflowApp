@@ -2,8 +2,8 @@
 //  Reachability.swift
 //  StackOverflowApp
 //
-//  Created by admin on 08/01/20.
-//  Copyright © 2020 Gofrugal Technologies. All rights reserved.
+//  Created by Mohanasundaram on 10/01/20.
+//  Copyright © 2020 AmsSanjeevi. All rights reserved.
 //
 
 import Foundation
@@ -52,15 +52,15 @@ class Reachability {
     }
     
     private func alertInternetIsMandatory() {
-//        Notifier.sharedInstance.removeNotifier()
-//        Notifier.sharedInstance.showAlert(
-//            alertTitle: "NoNetworkInfo".localized,
-//            message: "OfflineSupportSoonInfo".localized,
-//            firstButtonTitle: "Okay".localized,
-//            secondButtonTitle: nil,
-//            firstAction: nil,
-//            secondAction: nil
-//        )
+        Notifier.sharedInstance.removeNotifier()
+        Notifier.sharedInstance.showAlert(
+            alertTitle: "NoNetworkInfo".localized,
+            message: "CheckInternetInfo".localized,
+            firstButtonTitle: "Okay".localized,
+            secondButtonTitle: nil,
+            firstAction: nil,
+            secondAction: nil
+        )
     }
     
     private func connectionStatus() -> ReachabilityStatus {

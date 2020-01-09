@@ -2,8 +2,8 @@
 //  SessionManager.swift
 //  StackOverflowApp
 //
-//  Created by admin on 08/01/20.
-//  Copyright © 2020 Gofrugal Technologies. All rights reserved.
+//  Created by Mohanasundaram on 10/01/20.
+//  Copyright © 2020 AmsSanjeevi. All rights reserved.
 //
 
 import Foundation
@@ -63,14 +63,23 @@ extension SessionsManager {
     }
     
     private func verifyAndExtractData(data: Any?, response: Any?, error: Error?, completion: Success?) {
-        guard error == nil else { return }
-        guard let response = response as? HTTPURLResponse else { return }
-        guard let data = data as? Data else { return }
+        guard error == nil else {
+            Notifier.sharedInstance.showAlert(alertTitle: "Error".localized, message: error?.localizedDescription ?? "", firstButtonTitle: "Okay".localized)
+            return
+        }
+        guard let response = response as? HTTPURLResponse else {
+            Notifier.sharedInstance.showAlert(alertTitle: "Empty Response", message: "Invalid or Empty Response from the Server", firstButtonTitle: "Okay".localized)
+            return
+        }
+        guard let data = data as? Data else {
+            Notifier.sharedInstance.showAlert(alertTitle: "Invalid Data", message: "Invalid or Empty Data from the Server", firstButtonTitle: "Okay".localized)
+            return
+        }
         let serialisedData = data.json
         guard (200...299) ~= response.statusCode else {
             let errorMessage = serialisedData.value(forKey: "error_message") as? String ?? ""
             let errorName = serialisedData.value(forKey: "error_name") as? String ?? ""
-            print(errorName + errorMessage)
+            Notifier.sharedInstance.showAlert(alertTitle: "Bad Response Code", message: errorName + errorMessage, firstButtonTitle: "Okay".localized)
             return
         }
         completion!(serialisedData)

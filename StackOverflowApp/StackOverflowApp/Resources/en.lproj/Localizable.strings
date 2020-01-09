@@ -2,8 +2,8 @@
   Localizable.strings
   StackOverflowApp
 
-  Created by admin on 06/01/20.
-  Copyright © 2020 Gofrugal Technologies. All rights reserved.
+  Created by Mohanasundaram on 10/01/20.
+  Copyright © 2020 AmsSanjeevi. All rights reserved.
 */
 
 "Home" = "Home";
@@ -19,3 +19,6 @@
 "Activity" = "Activity";
 "Hot" = "Hot";
 "Votes" = "Votes";
+"NoNetworkInfo" = "Network is not connected";
+"CheckInternetInfo" = "Please check the internet connectivity";
+"NoRecord" = "No Record To Display";

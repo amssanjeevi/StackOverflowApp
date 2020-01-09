@@ -42,6 +42,8 @@
 		847CC12723C5B5E700A4A14E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CC12623C5B5E700A4A14E /* SessionManager.swift */; };
 		847CC12923C6408100A4A14E /* Data+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CC12823C6408100A4A14E /* Data+Common.swift */; };
 		847CC12B23C6502B00A4A14E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CC12A23C6502B00A4A14E /* Common.swift */; };
+		847CC12E23C7D0D300A4A14E /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CC12D23C7D0D300A4A14E /* Notifier.swift */; };
+		847CC13123C7D3FF00A4A14E /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CC13023C7D3FF00A4A14E /* Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		847CC12623C5B5E700A4A14E /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		847CC12823C6408100A4A14E /* Data+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Common.swift"; sourceTree = "<group>"; };
 		847CC12A23C6502B00A4A14E /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		847CC12D23C7D0D300A4A14E /* Notifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
+		847CC13023C7D3FF00A4A14E /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		BD4EFF776D8518127E26B144 /* Pods-StackOverflowApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowApp.release.xcconfig"; path = "Target Support Files/Pods-StackOverflowApp/Pods-StackOverflowApp.release.xcconfig"; sourceTree = "<group>"; };
 		F461F63F7C866D8FE08EA72D /* libPods-StackOverflowApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackOverflowApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,8 +136,10 @@
 				847B77BC23C31808007C88CC /* ContainerController */,
 				847B77BD23C33561007C88CC /* SelectViewControllers */,
 				847B77E623C524DB007C88CC /* TableViewCells */,
+				847CC12C23C7D0AC00A4A14E /* Notifier */,
 				847B77F323C54AED007C88CC /* Handlers */,
 				847B77CB23C3450F007C88CC /* Extensions */,
+				847CC12F23C7D3DD00A4A14E /* Constraints */,
 				847B77E123C4CB81007C88CC /* Themes */,
 				847B77C823C343BC007C88CC /* Helpers */,
 				847B77CE23C347F6007C88CC /* Resources */,
@@ -237,6 +243,22 @@
 				847CC12623C5B5E700A4A14E /* SessionManager.swift */,
 			);
 			path = Handlers;
+			sourceTree = "<group>";
+		};
+		847CC12C23C7D0AC00A4A14E /* Notifier */ = {
+			isa = PBXGroup;
+			children = (
+				847CC12D23C7D0D300A4A14E /* Notifier.swift */,
+			);
+			path = Notifier;
+			sourceTree = "<group>";
+		};
+		847CC12F23C7D3DD00A4A14E /* Constraints */ = {
+			isa = PBXGroup;
+			children = (
+				847CC13023C7D3FF00A4A14E /* Constraints.swift */,
+			);
+			path = Constraints;
 			sourceTree = "<group>";
 		};
 		8EC5710170B3CCACD67FFD5B /* Frameworks */ = {
@@ -353,6 +375,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				847B77C323C3360D007C88CC /* SearchViewController.swift in Sources */,
+				847CC12E23C7D0D300A4A14E /* Notifier.swift in Sources */,
+				847CC13123C7D3FF00A4A14E /* Constraints.swift in Sources */,
 				847B77CD23C3452B007C88CC /* ViewController+Common.swift in Sources */,
 				847B77E323C4CB9A007C88CC /* ViewController+Theme.swift in Sources */,
 				847B77F223C5375A007C88CC /* TextView+Theme.swift in Sources */,
