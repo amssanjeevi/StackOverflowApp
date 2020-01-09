@@ -74,7 +74,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard dataArray.count > 0 else { return }
-        answerDelegate.showAnswerForQuestion(at: indexPath.row, data: "e" as AnyObject)
+        //answerDelegate.showAnswerForQuestion(at: indexPath.row, data: "e" as AnyObject)
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
