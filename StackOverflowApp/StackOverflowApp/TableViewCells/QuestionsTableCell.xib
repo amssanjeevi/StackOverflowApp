@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuestionsTableCell" customModule="StackOverflowApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="702" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="Question" translatesAutoresizingMaskIntoConstraints="NO" id="EXv-P8-jxf">
+                    <rect key="frame" x="10" y="0.0" width="692" height="71"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                </textView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QcN-UX-M0Z">
+                    <rect key="frame" x="10" y="76" width="351" height="37"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Votes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HW8-9s-xJg" userLabel="Votes">
+                            <rect key="frame" x="0.0" y="0.0" width="113.5" height="37"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxF-tR-ydP" userLabel="Answers">
+                            <rect key="frame" x="118.5" y="0.0" width="114" height="37"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Views" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3q-iV-3X1" userLabel="Views">
+                            <rect key="frame" x="237.5" y="0.0" width="113.5" height="37"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Stamp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axr-EI-WK8">
+                    <rect key="frame" x="371" y="76" width="140.5" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asked By" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7C-8Z-vlV" userLabel="Asked By">
+                    <rect key="frame" x="521.5" y="76" width="175.5" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Axr-EI-WK8" firstAttribute="top" secondItem="QcN-UX-M0Z" secondAttribute="top" id="9rP-bU-LHZ"/>
+                <constraint firstItem="S7C-8Z-vlV" firstAttribute="top" secondItem="Axr-EI-WK8" secondAttribute="top" id="A8L-xx-wUq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Axr-EI-WK8" secondAttribute="bottom" constant="5" id="BBr-I5-Zpm"/>
+                <constraint firstItem="S7C-8Z-vlV" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.25" id="HDk-jj-xjC"/>
+                <constraint firstItem="QcN-UX-M0Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="IYa-fP-5VY"/>
+                <constraint firstItem="S7C-8Z-vlV" firstAttribute="height" secondItem="Axr-EI-WK8" secondAttribute="height" id="Jia-FN-BTT"/>
+                <constraint firstItem="S7C-8Z-vlV" firstAttribute="leading" secondItem="Axr-EI-WK8" secondAttribute="trailing" constant="10" id="RKG-FK-wYK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="EXv-P8-jxf" secondAttribute="top" id="UO4-mU-W6q"/>
+                <constraint firstItem="EXv-P8-jxf" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.6" id="ZaA-X8-2Iy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="S7C-8Z-vlV" secondAttribute="trailing" constant="5" id="dYf-wH-SaT"/>
+                <constraint firstItem="EXv-P8-jxf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="fS0-ot-6Z9"/>
+                <constraint firstItem="QcN-UX-M0Z" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="fYP-Zc-d8H"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="QcN-UX-M0Z" secondAttribute="bottom" constant="5" id="hAV-t4-P3H"/>
+                <constraint firstItem="Axr-EI-WK8" firstAttribute="leading" secondItem="QcN-UX-M0Z" secondAttribute="trailing" constant="10" id="jqW-2h-Zok"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EXv-P8-jxf" secondAttribute="trailing" id="kfj-4i-LtJ"/>
+                <constraint firstItem="QcN-UX-M0Z" firstAttribute="top" secondItem="EXv-P8-jxf" secondAttribute="bottom" constant="5" id="xIi-lP-BCO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="askedByLabel" destination="S7C-8Z-vlV" id="Ljp-MR-25d"/>
+                <outlet property="questionTextView" destination="EXv-P8-jxf" id="uhl-Gs-SXp"/>
+                <outlet property="timeStampLabel" destination="Axr-EI-WK8" id="mzL-4O-YtM"/>
+                <outlet property="totalAnswersLabel" destination="JxF-tR-ydP" id="8xI-fB-frJ"/>
+                <outlet property="totalViewsLabel" destination="J3q-iV-3X1" id="PH4-ck-2fj"/>
+                <outlet property="votesLabel" destination="HW8-9s-xJg" id="Yte-ld-8bP"/>
+            </connections>
+            <point key="canvasLocation" x="-390.39999999999998" y="23.388305847076463"/>
+        </view>
+    </objects>
+</document>

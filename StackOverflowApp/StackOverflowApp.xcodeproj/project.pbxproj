@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63164DA65BAE1CC35486BF8B /* libPods-StackOverflowApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F461F63F7C866D8FE08EA72D /* libPods-StackOverflowApp.a */; };
+		847B77A823C22BE8007C88CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77A723C22BE8007C88CC /* AppDelegate.swift */; };
+		847B77AA23C22BE8007C88CC /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77A923C22BE8007C88CC /* ContainerViewController.swift */; };
+		847B77AD23C22BE8007C88CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847B77AB23C22BE8007C88CC /* Main.storyboard */; };
+		847B77B023C22BE8007C88CC /* StackOverflowApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 847B77AE23C22BE8007C88CC /* StackOverflowApp.xcdatamodeld */; };
+		847B77B223C22BEB007C88CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847B77B123C22BEB007C88CC /* Assets.xcassets */; };
+		847B77B523C22BEB007C88CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847B77B323C22BEB007C88CC /* LaunchScreen.storyboard */; };
+		847B77BF23C335E3007C88CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77BE23C335E3007C88CC /* HomeViewController.swift */; };
+		847B77C123C335F2007C88CC /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77C023C335F2007C88CC /* UserViewController.swift */; };
+		847B77C323C3360D007C88CC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77C223C3360C007C88CC /* SearchViewController.swift */; };
+		847B77C523C3362A007C88CC /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847B77C423C3362A007C88CC /* HomeViewController.xib */; };
+		847B77C723C33649007C88CC /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847B77C623C33649007C88CC /* UserViewController.xib */; };
+		847B77CA23C343D0007C88CC /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77C923C343D0007C88CC /* ColorConstants.swift */; };
+		847B77CD23C3452B007C88CC /* ViewController+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77CC23C3452B007C88CC /* ViewController+Common.swift */; };
+		847B77D223C34884007C88CC /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 847B77D023C34884007C88CC /* icomoon.ttf */; };
+		847B77D323C34884007C88CC /* selection.json in Resources */ = {isa = PBXBuildFile; fileRef = 847B77D123C34884007C88CC /* selection.json */; };
+		847B77D523C348B0007C88CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77D423C348B0007C88CC /* Constants.swift */; };
+		847B77D723C348FB007C88CC /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77D623C348FB007C88CC /* IconFont.swift */; };
+		847B77D923C34A96007C88CC /* String+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77D823C34A96007C88CC /* String+Common.swift */; };
+		847B77DC23C350DE007C88CC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 847B77DE23C350DE007C88CC /* Localizable.strings */; };
+		847B77E323C4CB9A007C88CC /* ViewController+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77E223C4CB9A007C88CC /* ViewController+Theme.swift */; };
+		847B77E523C4CFBD007C88CC /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847B77E423C4CFBD007C88CC /* SearchViewController.xib */; };
+		847B77E823C5250E007C88CC /* QuestionsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77E723C5250E007C88CC /* QuestionsTableCell.swift */; };
+		847B77EA23C52521007C88CC /* QuestionsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847B77E923C52521007C88CC /* QuestionsTableCell.xib */; };
+		847B77EC23C5315E007C88CC /* TableView+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77EB23C5315E007C88CC /* TableView+Common.swift */; };
+		847B77EE23C53536007C88CC /* Label+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77ED23C53536007C88CC /* Label+Theme.swift */; };
+		847B77F023C53545007C88CC /* View+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77EF23C53545007C88CC /* View+Theme.swift */; };
+		847B77F223C5375A007C88CC /* TextView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77F123C5375A007C88CC /* TextView+Theme.swift */; };
+		847B77F523C54B03007C88CC /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77F423C54B03007C88CC /* NetworkEngine.swift */; };
+		847B77F723C54B4A007C88CC /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77F623C54B4A007C88CC /* AnswerViewController.swift */; };
+		847B77F923C54B5D007C88CC /* AnswerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847B77F823C54B5D007C88CC /* AnswerViewController.xib */; };
+		847B77FB23C5A784007C88CC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B77FA23C5A784007C88CC /* Reachability.swift */; };
+		847CC12723C5B5E700A4A14E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CC12623C5B5E700A4A14E /* SessionManager.swift */; };
+		847CC12923C6408100A4A14E /* Data+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CC12823C6408100A4A14E /* Data+Common.swift */; };
+		847CC12B23C6502B00A4A14E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CC12A23C6502B00A4A14E /* Common.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		354B6C80BFC1626D6F450A46 /* Pods-StackOverflowApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowApp.debug.xcconfig"; path = "Target Support Files/Pods-StackOverflowApp/Pods-StackOverflowApp.debug.xcconfig"; sourceTree = "<group>"; };
+		847B77A423C22BE8007C88CC /* StackOverflowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		847B77A723C22BE8007C88CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		847B77A923C22BE8007C88CC /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		847B77AC23C22BE8007C88CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		847B77AF23C22BE8007C88CC /* StackOverflowApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StackOverflowApp.xcdatamodel; sourceTree = "<group>"; };
+		847B77B123C22BEB007C88CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		847B77B423C22BEB007C88CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		847B77B623C22BEB007C88CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847B77BE23C335E3007C88CC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		847B77C023C335F2007C88CC /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		847B77C223C3360C007C88CC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		847B77C423C3362A007C88CC /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		847B77C623C33649007C88CC /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
+		847B77C923C343D0007C88CC /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		847B77CC23C3452B007C88CC /* ViewController+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Common.swift"; sourceTree = "<group>"; };
+		847B77D023C34884007C88CC /* icomoon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = icomoon.ttf; sourceTree = "<group>"; };
+		847B77D123C34884007C88CC /* selection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = selection.json; sourceTree = "<group>"; };
+		847B77D423C348B0007C88CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		847B77D623C348FB007C88CC /* IconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconFont.swift; sourceTree = "<group>"; };
+		847B77D823C34A96007C88CC /* String+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Common.swift"; sourceTree = "<group>"; };
+		847B77DD23C350DE007C88CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		847B77E223C4CB9A007C88CC /* ViewController+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Theme.swift"; sourceTree = "<group>"; };
+		847B77E423C4CFBD007C88CC /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		847B77E723C5250E007C88CC /* QuestionsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsTableCell.swift; sourceTree = "<group>"; };
+		847B77E923C52521007C88CC /* QuestionsTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsTableCell.xib; sourceTree = "<group>"; };
+		847B77EB23C5315E007C88CC /* TableView+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Common.swift"; sourceTree = "<group>"; };
+		847B77ED23C53536007C88CC /* Label+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+Theme.swift"; sourceTree = "<group>"; };
+		847B77EF23C53545007C88CC /* View+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Theme.swift"; sourceTree = "<group>"; };
+		847B77F123C5375A007C88CC /* TextView+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView+Theme.swift"; sourceTree = "<group>"; };
+		847B77F423C54B03007C88CC /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		847B77F623C54B4A007C88CC /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		847B77F823C54B5D007C88CC /* AnswerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerViewController.xib; sourceTree = "<group>"; };
+		847B77FA23C5A784007C88CC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		847CC12623C5B5E700A4A14E /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		847CC12823C6408100A4A14E /* Data+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Common.swift"; sourceTree = "<group>"; };
+		847CC12A23C6502B00A4A14E /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BD4EFF776D8518127E26B144 /* Pods-StackOverflowApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowApp.release.xcconfig"; path = "Target Support Files/Pods-StackOverflowApp/Pods-StackOverflowApp.release.xcconfig"; sourceTree = "<group>"; };
+		F461F63F7C866D8FE08EA72D /* libPods-StackOverflowApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StackOverflowApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		847B77A123C22BE8007C88CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63164DA65BAE1CC35486BF8B /* libPods-StackOverflowApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FFC58AC472105B956580F0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				354B6C80BFC1626D6F450A46 /* Pods-StackOverflowApp.debug.xcconfig */,
+				BD4EFF776D8518127E26B144 /* Pods-StackOverflowApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		847B779B23C22BE8007C88CC = {
+			isa = PBXGroup;
+			children = (
+				847B77A623C22BE8007C88CC /* StackOverflowApp */,
+				847B77A523C22BE8007C88CC /* Products */,
+				1FFC58AC472105B956580F0D /* Pods */,
+				8EC5710170B3CCACD67FFD5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		847B77A523C22BE8007C88CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				847B77A423C22BE8007C88CC /* StackOverflowApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		847B77A623C22BE8007C88CC /* StackOverflowApp */ = {
+			isa = PBXGroup;
+			children = (
+				847B77A723C22BE8007C88CC /* AppDelegate.swift */,
+				847B77BC23C31808007C88CC /* ContainerController */,
+				847B77BD23C33561007C88CC /* SelectViewControllers */,
+				847B77E623C524DB007C88CC /* TableViewCells */,
+				847B77F323C54AED007C88CC /* Handlers */,
+				847B77CB23C3450F007C88CC /* Extensions */,
+				847B77E123C4CB81007C88CC /* Themes */,
+				847B77C823C343BC007C88CC /* Helpers */,
+				847B77CE23C347F6007C88CC /* Resources */,
+				847B77AB23C22BE8007C88CC /* Main.storyboard */,
+				847B77B123C22BEB007C88CC /* Assets.xcassets */,
+				847B77B323C22BEB007C88CC /* LaunchScreen.storyboard */,
+				847B77B623C22BEB007C88CC /* Info.plist */,
+				847B77AE23C22BE8007C88CC /* StackOverflowApp.xcdatamodeld */,
+			);
+			path = StackOverflowApp;
+			sourceTree = "<group>";
+		};
+		847B77BC23C31808007C88CC /* ContainerController */ = {
+			isa = PBXGroup;
+			children = (
+				847B77A923C22BE8007C88CC /* ContainerViewController.swift */,
+			);
+			path = ContainerController;
+			sourceTree = "<group>";
+		};
+		847B77BD23C33561007C88CC /* SelectViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				847B77BE23C335E3007C88CC /* HomeViewController.swift */,
+				847B77C423C3362A007C88CC /* HomeViewController.xib */,
+				847B77C023C335F2007C88CC /* UserViewController.swift */,
+				847B77C623C33649007C88CC /* UserViewController.xib */,
+				847B77C223C3360C007C88CC /* SearchViewController.swift */,
+				847B77E423C4CFBD007C88CC /* SearchViewController.xib */,
+				847B77F623C54B4A007C88CC /* AnswerViewController.swift */,
+				847B77F823C54B5D007C88CC /* AnswerViewController.xib */,
+			);
+			path = SelectViewControllers;
+			sourceTree = "<group>";
+		};
+		847B77C823C343BC007C88CC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				847B77C923C343D0007C88CC /* ColorConstants.swift */,
+				847B77D423C348B0007C88CC /* Constants.swift */,
+				847B77D623C348FB007C88CC /* IconFont.swift */,
+				847CC12A23C6502B00A4A14E /* Common.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		847B77CB23C3450F007C88CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				847B77CC23C3452B007C88CC /* ViewController+Common.swift */,
+				847B77D823C34A96007C88CC /* String+Common.swift */,
+				847B77EB23C5315E007C88CC /* TableView+Common.swift */,
+				847CC12823C6408100A4A14E /* Data+Common.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		847B77CE23C347F6007C88CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				847B77CF23C3482C007C88CC /* IconFont */,
+				847B77DE23C350DE007C88CC /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		847B77CF23C3482C007C88CC /* IconFont */ = {
+			isa = PBXGroup;
+			children = (
+				847B77D023C34884007C88CC /* icomoon.ttf */,
+				847B77D123C34884007C88CC /* selection.json */,
+			);
+			path = IconFont;
+			sourceTree = "<group>";
+		};
+		847B77E123C4CB81007C88CC /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				847B77E223C4CB9A007C88CC /* ViewController+Theme.swift */,
+				847B77ED23C53536007C88CC /* Label+Theme.swift */,
+				847B77EF23C53545007C88CC /* View+Theme.swift */,
+				847B77F123C5375A007C88CC /* TextView+Theme.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		847B77E623C524DB007C88CC /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				847B77E723C5250E007C88CC /* QuestionsTableCell.swift */,
+				847B77E923C52521007C88CC /* QuestionsTableCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		847B77F323C54AED007C88CC /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				847B77F423C54B03007C88CC /* NetworkEngine.swift */,
+				847B77FA23C5A784007C88CC /* Reachability.swift */,
+				847CC12623C5B5E700A4A14E /* SessionManager.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		8EC5710170B3CCACD67FFD5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F461F63F7C866D8FE08EA72D /* libPods-StackOverflowApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		847B77A323C22BE8007C88CC /* StackOverflowApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847B77B923C22BEB007C88CC /* Build configuration list for PBXNativeTarget "StackOverflowApp" */;
+			buildPhases = (
+				2BC4C7E5A4BD0CD730A8EE54 /* [CP] Check Pods Manifest.lock */,
+				847B77A023C22BE8007C88CC /* Sources */,
+				847B77A123C22BE8007C88CC /* Frameworks */,
+				847B77A223C22BE8007C88CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackOverflowApp;
+			productName = StackOverflowApp;
+			productReference = 847B77A423C22BE8007C88CC /* StackOverflowApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		847B779C23C22BE8007C88CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Gofrugal Technologies";
+				TargetAttributes = {
+					847B77A323C22BE8007C88CC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 847B779F23C22BE8007C88CC /* Build configuration list for PBXProject "StackOverflowApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 847B779B23C22BE8007C88CC;
+			productRefGroup = 847B77A523C22BE8007C88CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				847B77A323C22BE8007C88CC /* StackOverflowApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		847B77A223C22BE8007C88CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847B77B523C22BEB007C88CC /* LaunchScreen.storyboard in Resources */,
+				847B77C723C33649007C88CC /* UserViewController.xib in Resources */,
+				847B77F923C54B5D007C88CC /* AnswerViewController.xib in Resources */,
+				847B77B223C22BEB007C88CC /* Assets.xcassets in Resources */,
+				847B77D223C34884007C88CC /* icomoon.ttf in Resources */,
+				847B77D323C34884007C88CC /* selection.json in Resources */,
+				847B77E523C4CFBD007C88CC /* SearchViewController.xib in Resources */,
+				847B77DC23C350DE007C88CC /* Localizable.strings in Resources */,
+				847B77AD23C22BE8007C88CC /* Main.storyboard in Resources */,
+				847B77EA23C52521007C88CC /* QuestionsTableCell.xib in Resources */,
+				847B77C523C3362A007C88CC /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BC4C7E5A4BD0CD730A8EE54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StackOverflowApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		847B77A023C22BE8007C88CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847B77C323C3360D007C88CC /* SearchViewController.swift in Sources */,
+				847B77CD23C3452B007C88CC /* ViewController+Common.swift in Sources */,
+				847B77E323C4CB9A007C88CC /* ViewController+Theme.swift in Sources */,
+				847B77F223C5375A007C88CC /* TextView+Theme.swift in Sources */,
+				847B77AA23C22BE8007C88CC /* ContainerViewController.swift in Sources */,
+				847B77EE23C53536007C88CC /* Label+Theme.swift in Sources */,
+				847B77CA23C343D0007C88CC /* ColorConstants.swift in Sources */,
+				847B77E823C5250E007C88CC /* QuestionsTableCell.swift in Sources */,
+				847CC12923C6408100A4A14E /* Data+Common.swift in Sources */,
+				847B77F523C54B03007C88CC /* NetworkEngine.swift in Sources */,
+				847B77C123C335F2007C88CC /* UserViewController.swift in Sources */,
+				847B77D723C348FB007C88CC /* IconFont.swift in Sources */,
+				847B77D923C34A96007C88CC /* String+Common.swift in Sources */,
+				847B77A823C22BE8007C88CC /* AppDelegate.swift in Sources */,
+				847B77EC23C5315E007C88CC /* TableView+Common.swift in Sources */,
+				847B77B023C22BE8007C88CC /* StackOverflowApp.xcdatamodeld in Sources */,
+				847CC12B23C6502B00A4A14E /* Common.swift in Sources */,
+				847B77F723C54B4A007C88CC /* AnswerViewController.swift in Sources */,
+				847B77F023C53545007C88CC /* View+Theme.swift in Sources */,
+				847B77BF23C335E3007C88CC /* HomeViewController.swift in Sources */,
+				847B77FB23C5A784007C88CC /* Reachability.swift in Sources */,
+				847B77D523C348B0007C88CC /* Constants.swift in Sources */,
+				847CC12723C5B5E700A4A14E /* SessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		847B77AB23C22BE8007C88CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847B77AC23C22BE8007C88CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		847B77B323C22BEB007C88CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847B77B423C22BEB007C88CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		847B77DE23C350DE007C88CC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847B77DD23C350DE007C88CC /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		847B77B723C22BEB007C88CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		847B77B823C22BEB007C88CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		847B77BA23C22BEB007C88CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 354B6C80BFC1626D6F450A46 /* Pods-StackOverflowApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FFFP7656X3;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = StackOverflowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gofrugal.StackOverflowApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		847B77BB23C22BEB007C88CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD4EFF776D8518127E26B144 /* Pods-StackOverflowApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FFFP7656X3;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = StackOverflowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gofrugal.StackOverflowApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		847B779F23C22BE8007C88CC /* Build configuration list for PBXProject "StackOverflowApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847B77B723C22BEB007C88CC /* Debug */,
+				847B77B823C22BEB007C88CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847B77B923C22BEB007C88CC /* Build configuration list for PBXNativeTarget "StackOverflowApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847B77BA23C22BEB007C88CC /* Debug */,
+				847B77BB23C22BEB007C88CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		847B77AE23C22BE8007C88CC /* StackOverflowApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				847B77AF23C22BE8007C88CC /* StackOverflowApp.xcdatamodel */,
+			);
+			currentVersion = 847B77AF23C22BE8007C88CC /* StackOverflowApp.xcdatamodel */;
+			path = StackOverflowApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 847B779C23C22BE8007C88CC /* Project object */;
+}

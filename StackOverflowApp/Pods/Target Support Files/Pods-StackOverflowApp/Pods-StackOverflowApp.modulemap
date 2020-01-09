@@ -1,0 +1,6 @@
+module Pods_StackOverflowApp {
+  umbrella header "Pods-StackOverflowApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

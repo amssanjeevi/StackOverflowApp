@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  StackOverflowApp
+
+  Created by admin on 06/01/20.
+  Copyright © 2020 Gofrugal Technologies. All rights reserved.
+*/
+
+"Home" = "Home";
+"User" = "User";
+"Search" = "Search";
+"Votes" = "Votes";
+"Ans" = "Ans";
+"Views" = "Views";
+"SortBy" = "Sort By";
+"SortQuestionsBy" = "Select a value to Sort Questions";
+"Cancel" = "Cancel";
+"Latest" = "Latest";
+"Activity" = "Activity";
+"Hot" = "Hot";
+"Votes" = "Votes";
