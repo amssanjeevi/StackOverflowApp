@@ -24,6 +24,7 @@ struct Constants {
         static let BorderWidth: CGFloat = 1
         static let QuestionCellHeight: CGFloat = 120
         static let StandardCornerRadius: CGFloat = 5
+        static let FooterIndicatorHeight: CGFloat = 20
     }
     
     struct Urls {
@@ -36,6 +37,9 @@ struct Constants {
     
     struct Numbers {
         static let TimeOutInterval: TimeInterval = 30
+        static let QuickAnimate: TimeInterval = 0.1
+        static let SlowAnimate: TimeInterval = 1
+        static let RegularAnimate: TimeInterval = 0.5
     }
     
     struct Items {

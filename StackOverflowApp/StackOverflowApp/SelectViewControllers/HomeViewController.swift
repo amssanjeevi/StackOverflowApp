@@ -21,7 +21,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     private var sortByValues: [(String, String)] = [("Latest","creation"), ("Activity","activity"), ("Hot","hot"), ("Votes","votes")]
     private var selectedSort: (String, String) = ("","")
     private var page = 1
-    private var scrollToTop = false
     private let refreshControl = UIRefreshControl()
     
     var answerDelegate: ViewAnswerDelegate!
@@ -30,7 +29,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.init(nibName: nil, bundle: nil)
         guard Reachability.sharedInstance.isReachable() else { return }
         selectedSort = sortByValues[0]
-        fetchQuestions()
+        fetchQuestions{}
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -80,8 +79,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard dataArray.count > 0 else { return }
         guard indexPath.row == dataArray.count - 1 else { return }
-        page = page + 1
-        fetchQuestions()
+        loadMore()
     }
     
     func sortQuestionsBySelectedValue(value: String) {
@@ -93,22 +91,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             default: selectedSort = sortByValues[0]
         }
         dataArray = []
-        scrollToTop = true
-        fetchQuestions()
+        guard Reachability.sharedInstance.isReachable() else { return }
+        Notifier.sharedInstance.footerActivityIndicator(info: "Fetching Questions")
+        fetchQuestions {
+            Notifier.sharedInstance.removeFooterNotification(title: "Done")
+            self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+        }
     }
     
-    private func fetchQuestions() {
-        guard Reachability.sharedInstance.isReachable() else { return }
-        Notifier.sharedInstance.showActivityIndicator(title: "Fetching Questions")
+    private func fetchQuestions(completion: @escaping () -> Void) {
         NetworkEngine.sharedInstance.fetchQuestions(sortBy: selectedSort.1, page: page) { (data) in
             let fetchedData = (data as AnyObject).value(forKey: "items") as! [AnyObject]
             self.dataArray.append(contentsOf: fetchedData)
             self.tableView.reloadData()
-            if self.scrollToTop {
-                self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
-                self.scrollToTop = false
-            }
-            Notifier.sharedInstance.removeNotifier()
+            completion()
         }
     }
     
@@ -132,8 +128,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @objc func refreshTableView() {
         dataArray = []
         page = 1
-        scrollToTop = true
-        fetchQuestions()
-        refreshControl.endRefreshing()
+        guard Reachability.sharedInstance.isReachable() else { return }
+        fetchQuestions{
+            self.refreshControl.endRefreshing()
+        }
+    }
+    
+    private func loadMore() {
+        page = page + 1
+        Notifier.sharedInstance.footerActivityIndicator(info: "Fetching Questions")
+        fetchQuestions {
+            Notifier.sharedInstance.removeFooterNotification(title: "Done")
+        }
     }
 }

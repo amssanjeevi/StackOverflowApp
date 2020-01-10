@@ -33,5 +33,31 @@ extension UIView {
             make.centerY.equalTo(snp.centerY)
         }
     }
+    
+    func footerInfoConstraints(footerInfoView: UIView) {
+        footerInfoView.snp.makeConstraints { (make) in
+            make.bottom.equalTo(snp.bottom).offset(-60)
+            make.left.equalTo(snp.left).offset(10)
+            make.right.equalTo(snp.right).offset(-10)
+            make.height.equalTo(40)
+        }
+    }
+    
+    func addFooterIconAndInfoConstraints(iconView: UIView, label: UIView) {
+        
+        iconView.snp.makeConstraints { (make) in
+            make.left.equalTo(snp.left).offset(10)
+            make.top.equalTo(snp.top)
+            make.bottom.equalTo(snp.bottom)
+            make.width.equalTo(20)
+        }
+        
+        label.snp.makeConstraints { (make) in
+            make.left.equalTo(iconView.snp.right).offset(10)
+            make.top.equalTo(snp.top)
+            make.bottom.equalTo(snp.bottom)
+            make.right.equalTo(snp.right)
+        }
+    }
 }
 

@@ -37,4 +37,8 @@ extension UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    func getRootController() -> UIViewController? {
+        return UIApplication.shared.keyWindow?.rootViewController
+    }
+    
 }

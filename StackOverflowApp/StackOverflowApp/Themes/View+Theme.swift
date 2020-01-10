@@ -32,4 +32,11 @@ extension UIView {
     func scale(to xTimes: CGFloat) {
         transform = CGAffineTransform(scaleX: xTimes, y: xTimes)
     }
+    
+    func slide(from firstPosition: CGRect, to secondPosition: CGRect, duration: TimeInterval = Constants.Numbers.QuickAnimate, delay: TimeInterval = 0, completion: ((Bool) -> Void)?) {
+        self.frame = firstPosition
+        UIView.animate(withDuration: Constants.Numbers.QuickAnimate, delay: delay, options: .curveEaseInOut, animations: {
+            self.frame = secondPosition
+        }, completion: completion)
+    }
 }
